@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mantenimiento de Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            border: 3px solid #000000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            background: #ffffff;
+        }
+
+        .top-box {
+            border-bottom: 1px solid #000000;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .middle-box {
+            border-left: none;
+            border-right: none;
+            border-top: 2px solid #000000;
+            border-bottom:2px solid #000000;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .bottom-box {
+            border-top: 1px solid #000000;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 15px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .box label {
+            text-align: left;
+            margin: 5px 0;
+            display: block;
+        }
+
+        .box .user-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 3px solid #000000;
+            border-radius: 5px;
+        }
+
+        .btnLogin {
+            background-color: transparent;
+            color: #000000;
+            border: 3px solid #000000;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 5px;
+            box-shadow: 3px 3px 5px #000000;
+        }
+
+        .box label {
+            text-align: left;
+            margin: 5px 10px;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .box .user-input {
+            width: calc(70% - 75px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 3px solid #000000;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="top-box">
+            <h2 class="title">Mantenimiento de Productos</h2>
+        </div>
+        <div class="middle-box">
+            <form class="box login" action="Productos" method="post">
+                <input type="hidden" name="accion" value="LOGIN">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" class="user-input" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="user-input" required>
+                <br>
+                <br>
+                <br>
+                <input type="submit" class="btnLogin" value="Ingresar">
+            </form>
+        </div>
+        <div class="bottom-box">
+        </div>
+    </div>
+</body>
+</html>
